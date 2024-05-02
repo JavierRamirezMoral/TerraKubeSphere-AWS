@@ -99,10 +99,10 @@ IMG
 ## Part 3: Conclusion. 
  <div align="justify"> 
 In essence, developing chatbots fueled by Bedrock Claude LLM alongside AWS Lex, Lambda, and CloudFormation, and seamlessly integrating them with a ReactJS web application, presents a robust and effective strategy for enhancing user engagement and satisfaction. </div>
-
+<br>
  <div align="justify"> 
 By harnessing these AWS services, you can effortlessly create chatbots with natural language understanding, seamlessly incorporate them into your web applications, and automate diverse workflows. Following the steps outlined in this article, you can build and deploy chatbots with ease, sidestepping concerns about the underlying infrastructure.  </div>
-
+<br>
  <div align="justify"> 
 Leveraging the capabilities of AWS Lex, Lambda, CloudFormation, and ReactJS enables you to furnish a comprehensive solution for constructing sophisticated chatbots. Such chatbots have the potential to elevate user experiences and optimize business processes, delivering end-to-end solutions that drive efficiency and customer satisfaction.  </div>
 
