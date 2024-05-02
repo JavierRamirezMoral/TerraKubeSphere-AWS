@@ -13,7 +13,7 @@ This tutorial will cover the following aspects of building a chatbot:
 
 * Leveraging the Amazon Lex UI console for chatbot construction and testing.
   
-* Employing AWS Lambda Function to augment the chatbot's capabilities, enabling it to furnish users with more precise and timely information.
+* Employing AWS Lambda Function to augment the chatbot's capabilities, enabling it to furnish users with more precise information.
   
 * Harnessing AWS CloudFormation to automate the deployment and administration of applications through straightforward procedures.
   
