@@ -44,8 +44,9 @@ AWS Lex is a cloud-based service provided by Amazon Web Services that enables de
 * Utterances are examples of phrases or sentences that we might use to convey a specific meaning or request. For example, when we walk into the pizza store to order a box of pizza, a possible request we could make is "I want to order a box of pizza." These utterances are used to teach the chatbot how to understand and respond to what we are saying. The more utterance we give, the better the chatbot will be at understanding what we’re trying to say. 
 
 * Slots are a collection of information that your prompt chatbot users to provide during a conversation with your bot. The bot will prompt the user to provide information for each slot, and once all of the required slots have been filled, the bot will be able to process the order and respond appropriately. Amazon Lex includes a variety of built-in slot types, including numbers, dates, countries, and many more. We can also define what sets of values are acceptable by creating our own custom slot types. 
-
-![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Lex%20Key%20points.png)
+<p align="center">
+  <img src= "https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Lex%20Key%20points.png"/>
+</p>
 
 ### Amazon Lambda 
  <div align="justify"> 
