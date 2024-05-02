@@ -19,7 +19,7 @@ This tutorial will cover the following aspects of building a chatbot:
   
 * Integration with ReactJS for building user interfaces (UIs) for single-page applications.
 
-IMG
+![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/AWS%20CHATBOT.png)
 
 ## Part 1: Amazon Tools. 
 <div align="justify"> 
@@ -29,13 +29,14 @@ AWS offers a comprehensive suite of AI services and tools designed to simplify t
 <div align="justify"> 
 Bedrock Claude LLM is a state-of-the-art language model designed to understand and generate human-like text. It’s based on advanced machine learning techniques and is particularly adept at handling nuanced language tasks. Bedrock Claude LLM augments the natural language understanding capabilities of Amazon Lex by providing a more sophisticated language model.  <br>
   
- IMG 
+![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Bedrock.png)
 
  ### Amazon Lex
  <div align="justify"> 
 AWS Lex is a cloud-based service provided by Amazon Web Services that enables developers to build conversational interfaces using voice and text. It uses natural language understanding (NLU) technology to understand and interpret user input, allowing developers to create chatbots, voice bots, and virtual assistants that can interact with users in a human-like way. AWS Lex is like a brain that can understand what people say or type, and then respond back like a human. 
 <br>
-IMG
+
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Bedrock.png)
 
 #### Key Fundamental Components of the Lex service: 
 * Intents as the name suggests, are a fundamental concept used to represent the purpose or goal of a user's input. Intents can be viewed as a verb, detecting what a user's intention is. For example, if you go to a pizza shop and order a pizza, your main intention is to order pizza, your purpose for going to the store is to get pizza. This works the same way for lex-powered chatbots. We must define intents so the bot can easily track or identify our goals during a conversation. 
@@ -44,26 +45,27 @@ IMG
 
 * Slots are a collection of information that your prompt chatbot users to provide during a conversation with your bot. The bot will prompt the user to provide information for each slot, and once all of the required slots have been filled, the bot will be able to process the order and respond appropriately. Amazon Lex includes a variety of built-in slot types, including numbers, dates, countries, and many more. We can also define what sets of values are acceptable by creating our own custom slot types. 
 
-IMG
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Lex%20Key%20points.png)
 
 ### Amazon Lambda 
  <div align="justify"> 
 AWS Lambda is a way to write and run code without worrying about setting up and maintaining the underlying server or computing resources. We can focus on writing our code, and Lambda takes care of executing it and scaling it as needed based on demand. It’s a popular choice for building serverless applications. </div>
 
-IMG
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Lambda.png)
 
 ### Amazon CloudFormation 
  <div align="justify"> 
 Amazon CloudFormation is a service provided by Amazon Web Services (AWS) that enables you to define and provision the infrastructure resources for your cloud-based applications using a declarative template. Instead of manually configuring and managing individual resources such as EC2 instances, databases, and networking components, CloudFormation allows you to describe your desired infrastructure in a template file using a JSON or YAML syntax. 
  </div>
 
- IMG
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/CloudFormation.png)
 
 ### ReactJS 
  <div align="justify"> 
 ReactJS, often simply referred to as React, is an open-source JavaScript library developed by Facebook. It is primarily used for building user interfaces (UIs) for single-page applications. React allows developers to create interactive UI components that can efficiently update and render changes to the user interface when data changes. </div>
 
-iMG
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/ReactJS.png)
+
 
 ## Part 2: Chatbot Technology. 
  <div align="justify"> 
@@ -74,7 +76,7 @@ In simple terms, chatbot is a service or tool that you can communicate with via 
  <div align="justify"> 
 Chatbot technology enables the development of conversational agents that interact with users in natural language, typically through text or speech interfaces. These AI-powered bots can be deployed across various platforms like websites, messaging apps, and voice assistants. Chatbots use natural language processing (NLP) and machine learning algorithms to understand user inputs, interpret intents, and generate relevant responses. They can handle a wide range of tasks, from answering FAQs and providing customer support to assisting with product recommendations and automating business processes. Chatbots offer businesses a scalable and efficient way to engage with customers, streamline operations, and deliver personalized experiences round the clock. </div>
 
- IMG
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/How-an-AI-Chatbot-Works.png)
 
 ### AWS ChatBot Features 
 
@@ -86,15 +88,13 @@ Important features of the AWS Chatbot service include the following:
 
 * Search and discover AWS information: You can search and discover information about AWS services and your AWS resources by asking AWS Chatbot natural language questions. The answers provided in your chat channels are pulled directly from your AWS environments, AWS product documentation, and support articles. This makes it easier to locate your resources, find product information, and troubleshoot issues.
 
-IMG
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/AWS%20ChatBot%20Features.png)
 
 ### How AWS Chatbot Works 
  <div align="justify"> 
 AWS Chatbot uses Amazon Simple Notification Service (Amazon SNS) topics to send event and alarm notifications from AWS services to your chat channels. Once an SNS topic is associated with a configured chat client, events and alarms from various services are processed and notifications are delivered to the specified chat channels and webhooks. For Microsoft Teams and Slack, after an administrator approves AWS Chatbot support for the workspace or tenant, anyone in the workspace or team can add AWS Chatbot to their chat channels. For Amazon Chime, users with AWS Identity and Access Management (IAM) permissions to use Amazon Chime can add AWS Chatbot to their webhooks. You use the AWS Chatbot console to configure chat clients to receive notifications from SNS topics. </div>
 
-IMG
-
- 
+![Alt text](![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/How%20AWS%20Chatbot%20Works.jpg)
 
 ## Part 3: Conclusion. 
  <div align="justify"> 
