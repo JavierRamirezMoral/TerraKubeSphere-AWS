@@ -59,7 +59,9 @@ AWS Lambda is a way to write and run code without worrying about setting up and 
 Amazon CloudFormation is a service provided by Amazon Web Services (AWS) that enables you to define and provision the infrastructure resources for your cloud-based applications using a declarative template. Instead of manually configuring and managing individual resources such as EC2 instances, databases, and networking components, CloudFormation allows you to describe your desired infrastructure in a template file using a JSON or YAML syntax. 
  </div>  <br>
 
-![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/CloudFormation.png)
+<p align="center">
+  <img src= "https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/CloudFormation.png" width=100%/>
+</p>
 
 ### ReactJS 
  <div align="justify"> 
@@ -77,7 +79,9 @@ In simple terms, chatbot is a service or tool that you can communicate with via 
  <div align="justify"> 
 Chatbot technology enables the development of conversational agents that interact with users in natural language, typically through text or speech interfaces. These AI-powered bots can be deployed across various platforms like websites, messaging apps, and voice assistants. Chatbots use natural language processing (NLP) and machine learning algorithms to understand user inputs, interpret intents, and generate relevant responses. They can handle a wide range of tasks, from answering FAQs and providing customer support to assisting with product recommendations and automating business processes. Chatbots offer businesses a scalable and efficient way to engage with customers, streamline operations, and deliver personalized experiences round the clock. </div> <br>
 
-![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/How-an-AI-Chatbot-Works.png)
+<p align="center">
+  <img src= "https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/How-an-AI-Chatbot-Works.png" width=100%/>
+</p>
 
 ### AWS ChatBot Features 
 
