@@ -5,25 +5,28 @@ _At the end of this README, you can find the VideoTutorial._
 ## Introduction.
 <div align="justify"> 
 Chatbots represent one of the latest trends in contemporary technology, exerting a significant influence on our daily routines. From managing appointments and offering medical guidance to facilitating flight reservations and delivering real-time updates, they streamline our lives, rendering tasks more manageable and efficient. Thanks to their ability to deliver immediate responses and tailor interactions, chatbots simplify our interactions, making them more personalized. 
-Amazon Lex stands out as a leading platform for crafting rapid and scalable chatbots. In this article, I will guide you through the process of constructing a chatbot utilizing Amazon Lex and Lambda, illustrating how to seamlessly integrate it into your React.js project. 
 </div> <br>
 This tutorial will cover the following aspects of building a chatbot: 
 
-* Utilizing Bedrock Claude LLM, an advanced language model to understand and generate human-like text. 
+* Firstly, we will use the Amazon Lex service to create our ChatBot and configure it.  
 
-* Leveraging the Amazon Lex UI console for chatbot construction and testing.
-  
-* Employing AWS Lambda Function to augment the chatbot's capabilities, enabling it to furnish users with more precise information.
-  
-* Harnessing AWS CloudFormation to automate the deployment and administration of applications through straightforward procedures.
-  
-* Integration with ReactJS for building user interfaces (UIs) for single-page applications.
+* We will integrate a lambda function and see how we could add an extra layer to our code with the functionalities of Bedrock Claude LLM. 
+
+* We will conduct testing to verify and observe the functioning of our ChatBot. 
+
+* We will integrate our Bot into our website using Kommunicate. We will explore other options for integrating it with CloudFormation. 
+
+* We add response cards to enhance the user experience and make interactions more intuitive. 
+
+* Finally, we use DynamoDB to collect data from our ChatBot. 
 
 ![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/AWS%20CHATBOT.png)
 
-## Part 1: Amazon Tools. 
+## Part 1: Amazon Services. 
 <div align="justify"> 
 AWS offers a comprehensive suite of AI services and tools designed to simplify the integration and deployment of artificial intelligence technologies. From pre-built AI services like image recognition and natural language processing to machine learning services such as Amazon SageMaker for building and training custom models, AWS provides scalable infrastructure and managed services to support various AI workloads. With seamless integration between services and flexible deployment options, AWS empowers businesses to harness the power of AI effectively, accelerating innovation and driving intelligent decision-making. Here are the main Amazon tools that we need to use for this tutorial. </div>
+
+![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/services.jpg)
 
 ### Bedrock Claude LLM 
 <div align="justify"> 
@@ -63,12 +66,19 @@ Amazon CloudFormation is a service provided by Amazon Web Services (AWS) that en
   <img src= "https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/CloudFormation.png" width=100%/>
 </p>
 
-### ReactJS 
+### Kommunicate  
  <div align="justify"> 
-ReactJS, often simply referred to as React, is an open-source JavaScript library developed by Facebook. It is primarily used for building user interfaces (UIs) for single-page applications. React allows developers to create interactive UI components that can efficiently update and render changes to the user interface when data changes. </div> <br>
+Kommunicate is a customer support and engagement platform that integrates seamlessly with websites and mobile apps to provide live chat support, chatbots, and other communication tools. It's designed to help businesses interact with their customers in real-time, automate responses, and manage conversations efficiently. Kommunicate offers features such as chat routing, canned responses, analytics, and integrations with popular customer relationship management (CRM) systems and helpdesk software. It's used by companies across various industries to enhance their customer support and engagement capabilities.  </div> <br>
 
-![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/ReactJS.png)
+<p align="center">
+  <img src= "https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/Kommunicate%20.png" width=100%/>
+</p>
 
+### DynamoDB
+ <div align="justify"> 
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database so that you don't have to worry about hardware provisioning, setup and configuration, replication, software patching, or cluster scaling. DynamoDB also offers encryption at rest, which eliminates the operational burden and complexity involved in protecting sensitive data. For more information, see DynamoDB encryption at rest.  </div> <br>
+
+![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/dynamodb.png)
 
 ## Part 2: Chatbot Technology. 
  <div align="justify"> 
@@ -86,12 +96,14 @@ Chatbot technology enables the development of conversational agents that interac
 ### AWS ChatBot Features 
 
 Important features of the AWS Chatbot service include the following: 
-
+ <div align="justify"> 
+   
 * Customize notifications: You can define and receive customized AWS service and application notifications directly in your chat channels. Custom notifications can be as succinct or comprehensive as you desire and use the same Amazon SNS-based mechanisms as default notifications. 
 
 * Create custom actions: Custom actions transform your notifications into actionable items. A custom action appears as a button on your notifications. This button represents a Lambda function or CLI command that you define. You can use custom actions to retrieve telemetry information, run Lambda functions, run an automation runbook, and notify team members. When an issue arises, you can easily act directly from your notifications. 
 
 * Search and discover AWS information: You can search and discover information about AWS services and your AWS resources by asking AWS Chatbot natural language questions. The answers provided in your chat channels are pulled directly from your AWS environments, AWS product documentation, and support articles. This makes it easier to locate your resources, find product information, and troubleshoot issues.
+</div>
 
 ![Alt text](https://github.com/JavierRamirezMoral/TerraKubeSphere-AWS/blob/main/Images/AWS%20ChatBot%20Features.png)
 
@@ -103,19 +115,11 @@ AWS Chatbot uses Amazon Simple Notification Service (Amazon SNS) topics to send 
 
 ## Part 3: Conclusion. 
  <div align="justify"> 
-In essence, developing chatbots fueled by Bedrock Claude LLM alongside AWS Lex, Lambda, and CloudFormation, and seamlessly integrating them with a ReactJS web application, presents a robust and effective strategy for enhancing user engagement and satisfaction. </div>
+To summarize (summarize), building chatbots powered by Bedrock Claude LLM with AWS Lex, Lambda, and CloudFormation or Kommunicate and integrating them with a web app is a powerful and efficient way to increase user engagement and customer satisfaction. In addition to being able to have a summary of our chatbot data stored in DynamoDB. </div>
 <br>
  <div align="justify"> 
-By harnessing these AWS services, you can effortlessly create chatbots with natural language understanding, seamlessly incorporate them into your web applications, and automate diverse workflows. Following the steps outlined in this article, you can build and deploy chatbots with ease, sidestepping concerns about the underlying infrastructure.  </div>
+You can easily create chatbots with natural language understanding, integrate them with your web apps, and automate various workflows using these AWS Services. You can easily build and deploy chatbots by following the steps outlined in this video without having to worry about the underlying infrastructure.  </div>
 <br>
  <div align="justify"> 
-Leveraging the capabilities of AWS Lex, Lambda, CloudFormation, and ReactJS enables you to furnish a comprehensive solution for constructing sophisticated chatbots. Such chatbots have the potential to elevate user experiences and optimize business processes, delivering end-to-end solutions that drive efficiency and customer satisfaction.  </div>
-
-
-
-
-
-
-
-
-
+   You can provide an end-to-end solution for building sophisticated chatbots that can improve user experience and streamline business operations
+ </div>
